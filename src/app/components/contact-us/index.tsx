@@ -147,7 +147,7 @@ const ContactUs: React.FC<Props> = ({ setSelectedPage }: Props) => {
                         <Image className="w-full absolute bottom-20 right-10 z-[0]" alt="background sparkles img" src={backgroundSparkles} />
                         <div className="w-full relative">
                             <Image
-                                className="w-full relative z-10"
+                                className="max-w-sm 2xl:max-w-full w-full relative z-10 mx-auto object-contain"
                                 alt="contact-us-page-graphic"
                                 src={ContactUsPageGraphic}
                             />
