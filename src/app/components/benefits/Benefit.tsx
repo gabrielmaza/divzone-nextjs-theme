@@ -13,7 +13,7 @@ type Props = {
     setSelectedPage: (value: SelectedPageEnum) => void;
 };
 
-export default function Benefit({ icon, title, description, setSelectedPage }: Props) {
+const Benefit: React.FC<Props> = ({ icon, title, description, setSelectedPage }: Props) => {
     return (
         <motion.div
             variants={childVariant}
@@ -31,7 +31,7 @@ export default function Benefit({ icon, title, description, setSelectedPage }: P
             <h4 className="font-bold text-gray-950">{title}</h4>
             <p className="my-3 text-gray-950">{description}</p>
             <a
-                className="text-sm font-bold underline"
+                className="text-sm font-bold"
                 onClick={() => setSelectedPage(SelectedPageEnum.ContactUs)}
                 href={`#${SelectedPageEnum.ContactUs}`}
             >
@@ -40,3 +40,5 @@ export default function Benefit({ icon, title, description, setSelectedPage }: P
         </motion.div>
     );
 };
+
+export default Benefit;

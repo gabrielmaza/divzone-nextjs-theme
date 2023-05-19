@@ -4,7 +4,7 @@ type Props = {
     background?: "secondary-100" | "primary-100"
 };
 
-export default function ServiceItem({ name, description }: Props) {
+const ServiceItem: React.FC<Props> = ({ name, description }: Props) => {
     const overlayStyles = `p-5 absolute z-30 flex
     h-full w-full flex-col items-center justify-center
     whitespace-normal bg-primary-500 text-center text-white
@@ -29,3 +29,5 @@ export default function ServiceItem({ name, description }: Props) {
         </li>
     );
 };
+
+export default ServiceItem;

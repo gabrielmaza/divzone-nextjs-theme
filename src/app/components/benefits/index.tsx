@@ -40,7 +40,7 @@ type Props = {
     setSelectedPage: (value: SelectedPageEnum) => void;
 }
 
-export default function index({ setSelectedPage }: Props) {
+const Benefits: React.FC<Props> = ({ setSelectedPage }) => {
     return (
         <section
             id="benefits"
@@ -121,7 +121,7 @@ export default function index({ setSelectedPage }: Props) {
                                 visible: { opacity: 1, x: 0 },
                             }}
                         >
-                            <p className="my-5">
+                            <p className="my-5 leading-7">
                                 Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
                                 egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
                                 fames vitae vitae quis. Quis amet vulputate tincidunt at in
@@ -129,7 +129,7 @@ export default function index({ setSelectedPage }: Props) {
                                 tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
                                 Felis orci diam odio.
                             </p>
-                            <p className="mb-5">
+                            <p className="mb-5 leading-7">
                                 Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
                                 tellus quam porttitor. Mauris velit euismod elementum arcu neque
                                 facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
@@ -139,7 +139,11 @@ export default function index({ setSelectedPage }: Props) {
 
                         {/* BUTTON */}
                         <div className="relative mt-16 z-10">
-                            <ActionButton label='Join Now' setSelectedPage={setSelectedPage} />
+                            <ActionButton
+                                setSelectedPage={setSelectedPage}
+                                page={SelectedPageEnum.ContactUs}
+                                label="Contact Now"
+                            />
                         </div>
                     </div>
                 </div>
@@ -147,3 +151,6 @@ export default function index({ setSelectedPage }: Props) {
         </section>
     )
 }
+
+export default Benefits;
+

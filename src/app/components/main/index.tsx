@@ -13,7 +13,7 @@ type Props = {
     setSelectedPage: (value: SelectedPageEnum) => void;
 }
 
-export default function Main({ setSelectedPage }: Props) {
+const Main: React.FC<Props> = ({ setSelectedPage }: Props) => {
 
     return (
         <section
@@ -47,7 +47,7 @@ export default function Main({ setSelectedPage }: Props) {
                             </div>
                         </div>
                         <h1 className="mt-8 text-xl font-bold">
-                            Transforming your digital vision into a reality through innovative solutions.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quisquam.
                         </h1>
                     </motion.div>
                     {/* Action buttons */}
@@ -62,7 +62,13 @@ export default function Main({ setSelectedPage }: Props) {
                             visible: { opacity: 1, x: 0 }
                         }}
                     >
-                        <ActionButton label="Join Now" setSelectedPage={setSelectedPage} />
+
+                        <ActionButton
+                            setSelectedPage={setSelectedPage}
+                            page={SelectedPageEnum.ContactUs}
+                            label="Join Now"
+                        />
+
                         <a
                             className='text-sm font-bold text-primary-100 underline hover:text-secondary-100 transition duration-500'
                             onClick={() => setSelectedPage(SelectedPageEnum.Benefits)}
@@ -80,13 +86,13 @@ export default function Main({ setSelectedPage }: Props) {
             {/* HOW DO WE DO IT? */}
             <div className="bg-gray-800 py-20 m-4 rounded-2xl">
                 <div className="md:flex items-center justify-center gap-4 mx-auto w-5/6 h-full">
-                    <HText className="w-full md:w-2/12 md:max-w-[200px] pb-12 md:p-0">HOW DO WE DO IT?</HText>
+                    <HText className="w-full md:w-2/12 md:max-w-[200px] pb-12 md:p-0">ESSENTIAL SERVICES</HText>
                     <div className="sm:flex items-center justify-between w-full md:w-10/12 h-full mx-auto pl-[20px] sm:pl-0">
                         <div className="relative flex flex-col justify-center w-full xs:w-2/3 md:w-1/3 h-[120px] p-4 mx-auto rounded-xl border border-secondary-50 bg-secondary-50">
                             <div className='absolute top-3 sm:top-[-20px] left-[-20px] sm:left-4 flex items-center justify-center w-10 h-10 border rounded-xl border-secondary-50 bg-gray-800'>
                                 <ArrowRightIcon className='w-5 h-5 text-secondary-50 rotate-90 sm:rotate-0' />
                             </div>
-                            <h2 className='text-lg md:text-xl font-bold text-gray-950 pl-3 sm-pl-0 pt-3'>Requirements gathering</h2>
+                            <h2 className='text-lg md:text-xl font-bold text-gray-950 pl-3 sm-pl-0 pt-3'>Digital Advertising</h2>
                         </div>
                         <svg className='w-auto h-6 mx-auto md:mx-0 hidden sm:block'
                             xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +109,7 @@ export default function Main({ setSelectedPage }: Props) {
                             <div className='absolute top-3 sm:top-[-20px] left-[-20px] sm:left-4 flex items-center justify-center w-10 h-10 border rounded-xl border-secondary-50 bg-gray-800'>
                                 <ArrowRightIcon className='w-5 h-5 text-secondary-50 rotate-90 sm:rotate-0' />
                             </div>
-                            <h2 className='text-lg md:text-xl font-bold text-gray-950 pl-3 sm-pl-0 pt-3'>Software design</h2>
+                            <h2 className='text-lg md:text-xl font-bold text-gray-950 pl-3 sm-pl-0 pt-3'>Social Media Marketing</h2>
                         </div>
                         <svg className='w-auto h-6 mx-auto md:mx-0 hidden sm:block'
                             xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +126,7 @@ export default function Main({ setSelectedPage }: Props) {
                             <div className='absolute top-3 sm:top-[-20px] left-[-20px] sm:left-4 flex items-center justify-center w-10 h-10 border rounded-xl border-secondary-50 bg-gray-800'>
                                 <ArrowRightIcon className='w-5 h-5 text-secondary-50 rotate-90 sm:rotate-0' />
                             </div>
-                            <h2 className='text-lg md:text-xl font-bold text-gray-950 pl-3 sm-pl-0 pt-3'>Implementation and testing</h2>
+                            <h2 className='text-lg md:text-xl font-bold text-gray-950 pl-3 sm-pl-0 pt-3'>Search Engine Optimization</h2>
                         </div>
                     </div>
                 </div>
@@ -128,3 +134,5 @@ export default function Main({ setSelectedPage }: Props) {
         </section>
     )
 }
+
+export default Main;

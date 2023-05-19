@@ -10,7 +10,7 @@ type Props = {
     setSelectedPage: (value: SelectedPageEnum) => void;
 };
 
-export default function ContactUs({ setSelectedPage }: Props) {
+const ContactUs: React.FC<Props> = ({ setSelectedPage }: Props) => {
     const inputStyles = `mb-5 w-full rounded-lg bg-primary-100
   px-5 py-3 placeholder-gray-900 placeholder:font-bold text-gray-950`;
 
@@ -158,3 +158,5 @@ export default function ContactUs({ setSelectedPage }: Props) {
         </section>
     );
 };
+
+export default ContactUs;
