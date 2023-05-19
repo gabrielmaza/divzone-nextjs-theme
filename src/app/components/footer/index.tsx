@@ -4,7 +4,7 @@ import { ArrowTopRightOnSquareIcon, LinkIcon, PhoneIcon } from "@heroicons/react
 import Image from "next/image";
 
 
-export default function Footer() {
+const Footer = () => {
     return (
         <footer className="bg-gray-950 py-16">
             <div className="mx-auto w-5/6 md:pb-10 pb-0">
@@ -67,3 +67,5 @@ export default function Footer() {
         </footer>
     );
 };
+
+export default Footer;

@@ -5,32 +5,32 @@ import ServiceItem from "./ServiceItem";
 
 const category: Array<ServiceType> = [
     {
-        name: "Software development",
+        name: "Content Marketing",
         description:
             "This service involves creating, designing, and developing software applications for different purposes, such as desktop or mobile applications, web applications, and custom software solutions.",
     },
     {
-        name: "Quality assurance",
+        name: "Email Marketing",
         description:
             "This service involves testing the software to ensure that it meets the necessary standards and requirements, and that it works correctly.",
     },
     {
-        name: "Maintenance & support",
+        name: "Branding and Identity",
         description:
             "This service involves providing ongoing maintenance and support to ensure that the software continues to function correctly and that any issues that arise are addressed promptly.",
     },
     {
-        name: "Project management",
+        name: "Marketing Analytics and Reporting",
         description:
             "This service involves overseeing the development process and ensuring that the project is completed on time, within budget, and to the required standard.",
     },
     {
-        name: "User experience (UX) design",
+        name: "Website Design and Development",
         description:
             "This service involves designing software that is user-friendly, intuitive, and easy to use.",
     },
     {
-        name: "Consulting",
+        name: "Public Relations and Media Outreach",
         description:
             "This service involves providing expert advice and guidance to clients on issues such as software development strategies, project management, and software integration.",
     },
@@ -40,7 +40,7 @@ type Props = {
     setSelectedPage: (value: SelectedPageEnum) => void;
 };
 
-export default function Services({ setSelectedPage }: Props) {
+const Services: React.FC<Props> = ({ setSelectedPage }: Props) => {
     return (
         <section id="services" className="w-full bg-gray-800 pt-24 pb-32">
             <motion.div
@@ -81,3 +81,5 @@ export default function Services({ setSelectedPage }: Props) {
         </section>
     );
 };
+
+export default Services;
