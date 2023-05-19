@@ -6,7 +6,6 @@ import { CheckCircleIcon, LifebuoyIcon, PlusCircleIcon } from "@heroicons/react/
 import { motion } from "framer-motion";
 import BenefitsPageGraphic from "../../../../public/img/benefits_page_graphic.png";
 import Benefit from './Benefit';
-import arrowRight from '../../../../public/img/svg/arrow.svg'
 
 const benefits: Array<BenefitType> = [
     {
@@ -44,7 +43,7 @@ const Benefits: React.FC<Props> = ({ setSelectedPage }) => {
     return (
         <section
             id="benefits"
-            className="mx-auto min-h-full w-5/6 pt-24 pb-32"
+            className="mx-auto min-h-full w-5/6 pt-10 lg:pt-24 pb-32"
         >
             <motion.div
                 onViewportEnter={() => setSelectedPage(SelectedPageEnum.Benefits)}
@@ -102,7 +101,13 @@ const Benefits: React.FC<Props> = ({ setSelectedPage }) => {
                                     visible: { opacity: 1, x: 0 },
                                 }}
                             >
-                                <Image className="hidden md:block absolute top-[-2rem] left-[-5rem] z-[1] w-16 rotate-45 opacity-10" alt="contact arrow img" src={arrowRight} />
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 95.854 95.66"
+                                    className="hidden w-12 h-12 md:block absolute top-[-2rem] left-[-4rem] z-[1] rotate-45 fill-gray-800"
+                                >
+                                    <path d="M95.85,47.79a.208.208,0,0,1,0,.08,5.071,5.071,0,0,1-.04.68,3.417,3.417,0,0,1-.09.63c-.02.1-.04.2-.07.3a2,2,0,0,1-.09.35.122.122,0,0,1-.03.09l-.01.02c-.09.27-.19.54-.3.8a8.01,8.01,0,0,1-.63,1.1,1.292,1.292,0,0,1-.25.34c-.09.11-.18.22-.27.32a1.935,1.935,0,0,1-.27.31l-.11.11L53,93.6a7.046,7.046,0,0,1-9.96-9.97L71.79,54.88H7.05a7.045,7.045,0,0,1,0-14.09H71.8L43.04,12.03A7.046,7.046,0,0,1,53,2.06l40.8,40.8c.21.21.4.43.58.65a3.175,3.175,0,0,1,.27.37c.07.1.37.65.45.82.03.05.06.11.09.17s.06.14.09.22a.974.974,0,0,0,.05.11.3.3,0,0,1,.04.1.564.564,0,0,1,.04.12c.05.11.3.99.31,1.06a3.416,3.416,0,0,1,.09.63,5.17,5.17,0,0,1,.04.68Z" />
+                                </svg>
                                 <HText>
                                     MILLIONS OF HAPPY MEMBERS GETTING{" "}
                                     <span className="text-primary-100">QUALITY SERVICES</span>
