@@ -44,7 +44,7 @@ const Footer = () => {
                     <p className="my-5 text-gray-600">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. At magnam explicabo inventore, voluptatem maxime quam neque mollitia.
                     </p>
-                    <p>© DivZone All Rights Reserved.</p>
+                    <p>Copyright © 2023. Built with DivZone.</p>
                 </div>
                 <div className="mt-16 basis-1/4 md:mt-0 flex flex-col gap-4">
                     <div className="flex items-center gap-2">

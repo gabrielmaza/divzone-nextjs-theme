@@ -10,5 +10,6 @@ body,
   height: 100%;
   width: 100%;
   font-family: "DM sans", sans-serif;
+  background-color: #1f1d23;
   @apply text-white;
 }

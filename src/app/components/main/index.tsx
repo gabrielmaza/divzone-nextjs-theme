@@ -41,13 +41,13 @@ const Main: React.FC<Props> = ({ setSelectedPage }: Props) => {
                     >
                         <div className="relative">
                             <Image className="absolute w-full scale-150 top-[-6rem] left-[-6rem] z-[-1] opacity-80" src={backgroundSparkles} alt={"background sparkles img"} />
-                            <div className="text-center flex flex-col justify-center">
+                            <div className="flex flex-col justify-center">
                                 <Image src={HomePageText} alt="Home page text" />
                                 <span className="text-primary-100 font-light text-[2rem] leading-[4rem]">Multipurpose theme.</span>
                             </div>
                         </div>
-                        <h1 className="mt-8 text-xl font-bold">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quisquam.
+                        <h1 className="mt-8 text-lg font-regular">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </h1>
                     </motion.div>
                     {/* Action buttons */}
@@ -84,8 +84,8 @@ const Main: React.FC<Props> = ({ setSelectedPage }: Props) => {
                 </div>
             </motion.div>
             {/* HOW DO WE DO IT? */}
-            <div className="bg-gray-800 py-20 m-4 rounded-2xl">
-                <div className="md:flex items-center justify-center gap-4 mx-auto w-5/6 h-full">
+            <div className="bg-gray-800 py-12 sm:py-20 mx-4 md:mx-16 my-4 rounded-2xl">
+                <div className="md:flex items-center justify-center gap-4 mx-auto w-11/12 xl:w-5/6 h-full">
                     <HText className="w-full md:w-2/12 md:max-w-[200px] pb-12 md:p-0">ESSENTIAL SERVICES</HText>
                     <div className="sm:flex items-center justify-between w-full md:w-10/12 h-full mx-auto pl-[20px] sm:pl-0">
                         <div className="relative flex flex-col justify-center w-full xs:w-2/3 md:w-1/3 h-[120px] p-4 mx-auto rounded-xl border border-secondary-50 bg-secondary-50">
