@@ -3,7 +3,7 @@ export enum SelectedPageEnum {
   Benefits = "benefits",
   Services = "services",
   ContactUs = "contactus",
-  Plans = "plans"
+  Plans = "plans",
 }
 
 export interface BenefitType {
@@ -21,6 +21,17 @@ export interface PlanType {
   name: string;
   description?: string;
   price: string;
-  items: string[];
+  items: [
+    { name: string },
+    { name: string },
+    { name: string },
+    { name: string }
+  ];
   recommended: boolean;
+}
+
+export interface FaqType {
+  id: number;
+  question: string;
+  answer: string;
 }
