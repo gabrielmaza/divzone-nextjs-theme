@@ -24,7 +24,7 @@ export default function RootLayout({
         <meta name="keywords" content={metadata.keywords} />
         <meta name="author" content={metadata.author} />
       </Head>
-      <body className={inter.className} style={{ scrollBehavior: 'smooth' }}>{children}</body>
+      <body className={`bg-gray-950 ${inter.className}`} style={{ scrollBehavior: 'smooth' }}>{children}</body>
     </html>
   )
 }

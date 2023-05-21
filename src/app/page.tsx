@@ -7,6 +7,7 @@ import Benefits from './components/benefits'
 import Services from './components/services'
 import ContactUs from './components/contact-us'
 import Footer from './components/footer'
+import Plans from './components/plans'
 
 export default function Home() {
 
@@ -27,7 +28,7 @@ export default function Home() {
 
 
   return (
-    <div className="bg-gray-950">
+    <div className="bg-gray-950 max-w-[1400px] mx-auto">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -36,6 +37,7 @@ export default function Home() {
       <Main setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
       <Services setSelectedPage={setSelectedPage} />
+      <Plans setSelectedPage={setSelectedPage} />
       <ContactUs setSelectedPage={setSelectedPage} />
       <Footer />
     </div>
