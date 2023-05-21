@@ -49,7 +49,7 @@ const Footer = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At magnam
             explicabo inventore, voluptatem maxime quam neque mollitia.
           </p>
-          <Copyright label="© All rights reserved." />
+          <Copyright label="All rights reserved © " />
         </div>
         <div className="mt-16 basis-1/4 md:mt-0 flex flex-col gap-4">
           <div className="flex items-center gap-2">
