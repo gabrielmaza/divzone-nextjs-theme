@@ -70,9 +70,9 @@ type Props = {
 
 const Pricing: React.FC<Props> = ({ setSelectedPage }: Props) => {
   return (
-    <section id="plans" className="bg-gray-700 pt-24 pb-32">
+    <section id="pricing" className="bg-gray-700 pt-24 pb-32">
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPageEnum.Plans)}
+        onViewportEnter={() => setSelectedPage(SelectedPageEnum.Pricing)}
       >
         <div className="mx-auto w-5/6">
           <div className="md:w-3/5">
