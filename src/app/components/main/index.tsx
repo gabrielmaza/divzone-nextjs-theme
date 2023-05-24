@@ -91,12 +91,12 @@ const Main: React.FC<Props> = ({ setSelectedPage }: Props) => {
       <div className="bg-gray-800 py-12 sm:py-20 mx-4 md:mx-16 my-4 rounded-2xl">
         <div className="md:flex items-center justify-center gap-4 mx-auto w-11/12 xl:w-5/6 h-full">
           <HText className="w-full md:w-2/12 md:max-w-[200px] pb-12 md:p-0">
-            ESSENTIAL SERVICES
+            THE ESSENTIAL
           </HText>
           <div className="sm:flex items-center justify-between w-full md:w-10/12 h-full mx-auto pl-[20px] sm:pl-0">
-            <div className="relative flex flex-col justify-center w-full xs:w-2/3 md:w-1/3 h-[120px] p-4 mx-auto rounded-xl border border-secondary-50 bg-secondary-50">
-              <div className="absolute top-3 sm:top-[-20px] left-[-20px] sm:left-4 flex items-center justify-center w-10 h-10 border rounded-xl border-secondary-50 bg-gray-800">
-                <ArrowRightIcon className="w-5 h-5 text-secondary-50 rotate-90 sm:rotate-0" />
+            <div className="relative flex flex-col justify-center w-full xs:w-2/3 md:w-1/3 h-[120px] p-4 mx-auto rounded-xl border border-secondary-100 bg-secondary-100">
+              <div className="absolute top-3 sm:top-[-20px] left-[-20px] sm:left-4 flex items-center justify-center w-10 h-10 border rounded-xl border-secondary-100 bg-gray-800">
+                <ArrowRightIcon className="w-5 h-5 text-secondary-100 rotate-90 sm:rotate-0" />
               </div>
               <h2 className="text-lg md:text-xl font-bold text-gray-900 pl-3 sm-pl-0 pt-3">
                 Digital Advertising
@@ -109,7 +109,7 @@ const Main: React.FC<Props> = ({ setSelectedPage }: Props) => {
             >
               <g>
                 <path
-                  className="fill-secondary-50"
+                  className="fill-secondary-100"
                   d="m24.15,0v48.31c0-6.67-5.4-12.08-12.07-12.08S0,41.64,0,48.31V0c0,6.67,5.41,12.08,12.08,12.08S24.15,6.67,24.15,0Z"
                 />
               </g>
@@ -121,14 +121,14 @@ const Main: React.FC<Props> = ({ setSelectedPage }: Props) => {
             >
               <g>
                 <path
-                  className="fill-secondary-50"
+                  className="fill-secondary-100"
                   d="m48.31,24.15H0c6.67,0,12.08-5.4,12.08-12.07S6.67,0,0,0h48.31c-6.67,0-12.08,5.41-12.08,12.08s5.41,12.07,12.08,12.07Z"
                 />
               </g>
             </svg>
-            <div className="relative flex flex-col justify-center w-full xs:w-2/3 md:w-1/3 h-[120px] p-4 mx-auto rounded-xl border border-secondary-50 bg-secondary-50">
-              <div className="absolute top-3 sm:top-[-20px] left-[-20px] sm:left-4 flex items-center justify-center w-10 h-10 border rounded-xl border-secondary-50 bg-gray-800">
-                <ArrowRightIcon className="w-5 h-5 text-secondary-50 rotate-90 sm:rotate-0" />
+            <div className="relative flex flex-col justify-center w-full xs:w-2/3 md:w-1/3 h-[120px] p-4 mx-auto rounded-xl border border-secondary-100 bg-secondary-100">
+              <div className="absolute top-3 sm:top-[-20px] left-[-20px] sm:left-4 flex items-center justify-center w-10 h-10 border rounded-xl border-secondary-100 bg-gray-800">
+                <ArrowRightIcon className="w-5 h-5 text-secondary-100 rotate-90 sm:rotate-0" />
               </div>
               <h2 className="text-lg md:text-xl font-bold text-gray-900 pl-3 sm-pl-0 pt-3">
                 Social Media Marketing
@@ -141,7 +141,7 @@ const Main: React.FC<Props> = ({ setSelectedPage }: Props) => {
             >
               <g>
                 <path
-                  className="fill-secondary-50"
+                  className="fill-secondary-100"
                   d="m24.15,0v48.31c0-6.67-5.4-12.08-12.07-12.08S0,41.64,0,48.31V0c0,6.67,5.41,12.08,12.08,12.08S24.15,6.67,24.15,0Z"
                 />
               </g>
@@ -153,14 +153,14 @@ const Main: React.FC<Props> = ({ setSelectedPage }: Props) => {
             >
               <g>
                 <path
-                  className="fill-secondary-50"
+                  className="fill-secondary-100"
                   d="m48.31,24.15H0c6.67,0,12.08-5.4,12.08-12.07S6.67,0,0,0h48.31c-6.67,0-12.08,5.41-12.08,12.08s5.41,12.07,12.08,12.07Z"
                 />
               </g>
             </svg>
-            <div className="relative flex flex-col justify-center w-full xs:w-2/3 md:w-1/3 h-[120px] p-4 mx-auto rounded-xl border border-secondary-50 bg-secondary-50">
-              <div className="absolute top-3 sm:top-[-20px] left-[-20px] sm:left-4 flex items-center justify-center w-10 h-10 border rounded-xl border-secondary-50 bg-gray-800">
-                <ArrowRightIcon className="w-5 h-5 text-secondary-50 rotate-90 sm:rotate-0" />
+            <div className="relative flex flex-col justify-center w-full xs:w-2/3 md:w-1/3 h-[120px] p-4 mx-auto rounded-xl border border-secondary-100 bg-secondary-100">
+              <div className="absolute top-3 sm:top-[-20px] left-[-20px] sm:left-4 flex items-center justify-center w-10 h-10 border rounded-xl border-secondary-100 bg-gray-800">
+                <ArrowRightIcon className="w-5 h-5 text-secondary-100 rotate-90 sm:rotate-0" />
               </div>
               <h2 className="text-lg md:text-xl font-bold text-gray-900 pl-3 sm-pl-0 pt-3">
                 Search Engine Optimization

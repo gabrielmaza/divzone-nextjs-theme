@@ -11,7 +11,7 @@ const ServiceItem: React.FC<Props> = ({ name, description }: Props) => {
     opacity-0 transition duration-500 hover:opacity-90 rounded-xl`;
 
   return (
-    <li className="relative inline-block h-[280px] w-[280px] rounded-xl bg-secondary-50">
+    <li className="relative inline-block h-[280px] w-[280px] rounded-xl bg-secondary-100">
       <div className={overlayStyles}>
         <p className="mt-5">{description}</p>
       </div>

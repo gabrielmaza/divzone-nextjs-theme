@@ -28,7 +28,7 @@ const Navbar: React.FC<Props> = ({
   return (
     <nav>
       <div
-        className={`${navbarBackground} ${flexBetween} fixed top-0 z-50 w-full py-6 max-w-[1400px]`}
+        className={`${navbarBackground} ${flexBetween} fixed top-0 z-50 w-full py-6 max-w-[1600px]`}
       >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
@@ -70,13 +70,6 @@ const Navbar: React.FC<Props> = ({
                     setSelectedPage={setSelectedPage}
                     page="Faqs"
                   />
-                  {/* <a
-                    href="#"
-                    title="Sign in MyLink"
-                    className={`transition duration-500 hover:text-gray-600`}
-                  >
-                    Sign In
-                  </a> */}
                   <a
                     href="#"
                     className="rounded-md bg-transparent border-solid border border-white px-6 py-2 cursor-pointer transition duration-500 hover:bg-gray-800"
@@ -126,7 +119,7 @@ const Navbar: React.FC<Props> = ({
       {/* Mobile menu modal */}
       {!isAboveMediumScreens && isOpen && (
         <motion.div
-          className="fixed bottom-0 right-0 top-0 z-50 w-[300px] bg-gray-800 drop-shadow-xl"
+          className="fixed bottom-0 right-0 top-0 z-50 w-[300px] bg-gray-800 drop-shadow-xl overflow-auto ..."
           initial="closed"
           whileInView="open"
           variants={{
@@ -205,13 +198,13 @@ const Navbar: React.FC<Props> = ({
               <a
                 href="https://divzone-react-theme-docs.vercel.app/docs/intro"
                 target="_blank"
-                className="text-white transition duration-500 hover:text-gray-600 cursor-pointer"
+                className="text-white transition duration-500 hover:text-primary-100 cursor-pointer"
               >
                 Docs
               </a>
               <a
                 href="#"
-                className="text-center rounded-md bg-transparent border-solid border border-white px-6 py-2 cursor-pointer transition duration-500 hover:bg-gray-800"
+                className="text-center rounded-md bg-transparent border-solid border border-white px-6 py-2 cursor-pointer transition duration-500 hover:bg-gray-700"
               >
                 <span className="text-lg inline-block">Sign In</span>
                 <svg

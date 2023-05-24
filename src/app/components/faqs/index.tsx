@@ -10,31 +10,31 @@ const faqs: Array<FaqType> = [
     id: 1,
     question: "What are your payment methods?",
     answer:
-      "We accept various payment methods, including credit cards, PayPal, and bank transfers. You can choose the option that is most convenient for you.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum deleniti molestiae, ad, consequuntur non consectetur impedit.",
   },
   {
     id: 2,
     question: "How long does shipping take?",
     answer:
-      "Shipping times vary depending on your location and the shipping method chosen. Typically, orders are delivered within 3-7 business days.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum deleniti molestiae, ad, consequuntur non consectetur impedit, quam quaerat iure debitis repudiandae quisquam cumque.",
   },
   {
     id: 3,
     question: "Can I return or exchange a product?",
     answer:
-      "Yes, we have a hassle-free return and exchange policy. If you are not satisfied with your purchase, you can return or exchange the product within 30 days of receipt.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum deleniti molestiae, ad, consequuntur non.",
   },
   {
     id: 4,
     question: "Do you offer international shipping?",
     answer:
-      "Yes, we offer international shipping to most countries. Additional fees and customs duties may apply. Please check our shipping policies for more information.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum deleniti molestiae, ad, consequuntur non consectetur impedit, quam quaerat iure debitis repudiandae quisquam cumque. Temporibus numquam eligendi perspiciatis deserunt deleniti.",
   },
   {
     id: 5,
     question: "How can I track my order?",
     answer:
-      "Once your order is shipped, we will provide you with a tracking number. You can use this tracking number to monitor the progress of your shipment on our website.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum deleniti molestiae, ad, consequuntur non consectetur impedit, quam quaerat iure debitis repudiandae quisquam cumque? Temporibus numquam eligendi perspiciatis deserunt deleniti?",
   },
 ];
 
@@ -63,7 +63,7 @@ const Faqs: React.FC<Props> = ({ setSelectedPage }: Props) => {
               <Disclosure key={faq.id} as="div" className="py-1">
                 {({ open }) => (
                   <>
-                    <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-800 px-4 py-4 text-left text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus-visible:ring focus-visible:ring-primary-300 focus-visible:ring-opacity-75 transition-all">
+                    <Disclosure.Button className="flex w-full justify-between rounded-lg bg-gray-800 px-4 py-4 text-left text-md font-medium text-white hover:bg-gray-700 focus:outline-none focus-visible:ring focus-visible:ring-primary-300 focus-visible:ring-opacity-75 transition-all">
                       <span>{faq.question}</span>
                       <ChevronUpIcon
                         className={`${
@@ -71,7 +71,7 @@ const Faqs: React.FC<Props> = ({ setSelectedPage }: Props) => {
                         } h-5 w-5 text-white`}
                       />
                     </Disclosure.Button>
-                    <Disclosure.Panel className="px-4 pt-5 pb-3 text-sm text-white">
+                    <Disclosure.Panel className="px-4 pt-5 pb-3 text-md leading-7 text-white">
                       {faq.answer}
                     </Disclosure.Panel>
                   </>
