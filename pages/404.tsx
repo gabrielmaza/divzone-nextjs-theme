@@ -5,7 +5,7 @@ import Footer from "@/app/components/footer";
 
 export default function Error() {
   return (
-    <div className="bg-gray-900 max-w-[1400px] mx-auto">
+    <div className="bg-gray-900 max-w-[1600px] mx-auto">
       <div
         className="w-full text-center"
         style={{

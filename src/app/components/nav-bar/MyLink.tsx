@@ -17,9 +17,10 @@ const MyLink: React.FC<Props> = ({
     .replace(/ /g, "") as SelectedPageEnum;
   return (
     <Link
-      className={`${selectedPage === lowerCasePage ? "text-secondary-100" : "text-white"
-        }
-    transition duration-500 hover:text-gray-600 cursor-pointer
+      className={`${
+        selectedPage === lowerCasePage ? "text-secondary-100" : "text-white"
+      }
+    transition duration-500 hover:text-primary-100 cursor-pointer
     `}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
@@ -27,6 +28,6 @@ const MyLink: React.FC<Props> = ({
       {page}
     </Link>
   );
-}
+};
 
 export default MyLink;
