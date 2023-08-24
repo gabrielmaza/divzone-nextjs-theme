@@ -87,7 +87,7 @@ const Main: React.FC<Props> = ({ setSelectedPage }: Props) => {
           />
         </div>
       </motion.div>
-      {/* HOW DO WE DO IT? */}
+      {/* THE ESSENTIAL */}
       <div className="bg-gray-800 py-12 sm:py-20 mx-4 md:mx-16 my-4 rounded-2xl">
         <div className="md:flex items-center justify-center gap-4 mx-auto w-11/12 xl:w-5/6 h-full">
           <HText className="w-full md:w-2/12 md:max-w-[200px] pb-12 md:p-0">
